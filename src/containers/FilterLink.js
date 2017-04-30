@@ -1,7 +1,7 @@
 // @flow
 import { connect } from 'react-redux';
 import { setVisibilityFilter } from '../actions';
-import Link from '../conponents/Link';
+import Link from '../components/Link';
 import type { Props } from '../components/link';
 import type { State, Dispatch, VisibilityFilter } from '../types';
 import type { Connector } from 'react-redux';

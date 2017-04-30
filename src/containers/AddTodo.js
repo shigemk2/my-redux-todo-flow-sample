@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
-import { connect } from '../actions';
+import { connect } from 'react-redux';
+import { addTodo } from '../actions';
 import type { Dispatch } from '../types';
 import type { Connector } from 'react-redux';
 
@@ -31,7 +32,7 @@ const AddTodo = ({ dispatch }) => {
       </form>
     </div>
   )
-}
+};
 
 const connector: Connector<{}, Props> = connect();
 
