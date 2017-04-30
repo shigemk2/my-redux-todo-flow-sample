@@ -8,7 +8,7 @@ type Props = {
   dispatch: Dispatch
 }
 
-const AddTodo = ({ dispatch }) = {
+const AddTodo = ({ dispatch }) => {
   let input;
 
   return(
