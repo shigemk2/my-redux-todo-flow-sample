@@ -10,8 +10,8 @@ import type { Store } from './types';
 const store: Store = createStore(reducer);
 
 render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
-    document.getElementById('root')
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
 )
