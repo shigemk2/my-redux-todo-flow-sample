@@ -1,12 +1,12 @@
 // @flow
 import type { Id, Text, VisibilityFilter, Action } from '../types';
 
-let nextTodoid: Id = 0;
+let nextTodoId: Id = 0;
 
 export const addTodo = (text: Text): Action => {
   return {
     type: 'ADD_TODO',
-    id: nextTodoid++,
+    id: nextTodoId++,
     text
   }
 };
@@ -18,7 +18,7 @@ export const setVisibilityFilter = (filter: VisibilityFilter): Action => {
   }
 };
 
-export const toggleTodo = (id: ID): Action => {
+export const toggleTodo = (id: Id): Action => {
   return {
     type: 'TOGGLE_TODO',
     id
