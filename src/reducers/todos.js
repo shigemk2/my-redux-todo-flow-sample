@@ -22,7 +22,7 @@ function toggleTodo(todos: Todos, id: Id): Todos {
 
 const todos = (state: Todos = [], action: Action): Todos => {
   switch (action.type) {
-    case 'ADD_TDOO':
+    case 'ADD_TODO':
       return [
         ...state,
         createTodo(action.id, action.text)
